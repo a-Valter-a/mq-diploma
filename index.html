@@ -35,7 +35,7 @@
       </div>
     </header>
 
-    <article class="trend">
+    <div class="trend">
       <h2 class="title">Сейчас в тренде</h2>
       <div class="trend__container">
         <section class="card card1">
@@ -94,11 +94,11 @@
           </div>
         </section>
       </div>
-    </article>
+    </div>
 
     <div class="container">
       <main class="main">
-        <article class="main__article">
+        <div class="main__article">
           <section class="section-article">
             <div class="section-article__image">
               <img
@@ -277,7 +277,7 @@
             </div>
           </section>
 
-        </article>
+        </div>
 
         <aside class="aside">
           <section class="aside__news">
@@ -379,11 +379,13 @@
           </section>
 
           <section class="aside__search">
-            <form class="search">
-              <span class="visually-hidden"
-                >нажмите на ссылку "лупа" и начните поиск</span
-              >
-              <input class="field" type="text" placeholder="Найти..." />
+            <form class="search search-flex">
+              <div class="search__container">
+                <span class="visually-hidden"
+                  >нажмите на ссылку "лупа" и начните поиск</span
+                >
+                <input class="field" type="text" placeholder="Найти..." />
+              </div>
               <button class="button" type="submit"></button>
             </form>
           </section>
@@ -392,18 +394,20 @@
             <h3 class="title">Рассылка</h3>
 
             <form class="search">
-              <label class="visually-hidden"
-                ><span>введите email-адрес</span></label
-              >
-              <input
-                class="field"
-                type="email"
-                required
-                placeholder="Ваш email-адрес"
-              />
+              <div class="search__container">
+                <label class="visually-hidden"
+                  ><span>введите email-адрес</span></label
+                >
+                <input
+                  class="field"
+                  type="email"
+                  required
+                  placeholder="Ваш email-адрес"
+                />
+              </div>
+              <button class="submit" type="submit">Подписаться</button>
             </form>
 
-            <button class="aside-post__submit" type="submit">Подписаться</button>
           </section>
 
           <section class="aside__tags">
@@ -448,7 +452,7 @@
       </main>
     </div>
 
-    <article class="main-items">
+    <div class="main-items">
       <h2 class="title">наши изделия</h2>
       <div class="container">
         <div class="main-items__container">
@@ -483,7 +487,7 @@
                   <h3>800</h3>
                 </div>
                 <div class="button-post">
-                  <button class="aside-post__submit" type="submit">в магазин</button>
+                  <button class="submit" type="submit">в магазин</button>
                 </div>
               </div>
             </div>
@@ -520,7 +524,7 @@
                   <h3>3500</h3>
                 </div>
                 <div class="button-post">
-                  <button class="aside-post__submit" type="submit">в магазин</button>
+                  <button class="submit" type="submit">в магазин</button>
                 </div>
               </div>
             </div>
@@ -559,14 +563,14 @@
                   <h3>400</h3>
                 </div>
                 <div class="button-post">
-                  <button class="aside-post__submit" type="submit">в магазин</button>
+                  <button class="submit" type="submit">в магазин</button>
                 </div>
               </div>
             </div>
           </section>
         </div>
       </div>
-    </article>
+    </div>
 
     <div class="container">
       <footer class="footer">
