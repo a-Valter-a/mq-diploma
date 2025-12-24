@@ -623,7 +623,6 @@ button {
 
 .button:hover {
   background-color: #323232;
-  outline: 3px solid #ccc370;
 }
 
 
@@ -658,7 +657,6 @@ button {
 
 .submit:hover {
   background-color: #323232;
-  outline: 3px solid #ccc370;
 }
 
 .aside__tags {
@@ -715,13 +713,22 @@ button {
   border-bottom: 1px solid #eeeeee;
   width: 100%;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .topic-list li a {
   text-decoration: none;
   list-style: none;
   color: #000000;
+  font-weight: 600;
+}
+
+.topic-list li:hover a {
+  color: #ccc370;
+}
+
+.topic-list li a:hover span {
+   opacity: 0.6;
 }
 
 .topic-list span {
@@ -734,9 +741,6 @@ button {
   font-weight: 700;
 }
 
-.topic-list span:hover {
-  opacity: 0.6;
-}
 
 .main-items {
   width: 100%;
